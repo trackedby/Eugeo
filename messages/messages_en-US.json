@@ -1,0 +1,90 @@
+{
+  "langLoaded": "[Cardinal] Linguagem carregada com sucesso",
+  "adsprot": {
+    "noPermission": ":x: | Somente a `ADMINISTRAÇÃO`!",
+    "alreadyOn": ":x: | Proteção de auto-promoção já está habilitada, para desativar, utilize: ${prefix}adsprot off.",
+    "turnedOn": ":white_check_mark: | Proteção de auto-promoção habilitada com sucesso!",
+    "alreadyOff": ":x: | Proteção de auto-promoção já está desabilitada, para ativar, utilize: ${prefix}adsprot on.",
+    "turnedOff": ":white_check_mark: | Proteção de auto-promoção desabilitada com sucesso!",
+    "incorrectUsage": ":x: | Uso incorreto do comando! Utilize: ${prefix}adsprot on para a habilitar a proteção, ou ${prefix}adsprot off para desabilitar a proteção."
+  },
+    "clima": {
+    "noEmbedPermission": ":x: **| Você precisa da permissão `EMBED_LINKS` para executar este comando.**",
+    "showingAvatar": "Visualizando o clima de: **${user}**",
+    "requestedBy": "Clima pedido por: ${author}"
+  },
+  "foto": {
+    "noEmbedPermission": ":x: **| Você precisa da permissão `EMBED_LINKS` para executar este comando.**",
+    "showingAvatar": "Visualizando o avatar de: **${user}**",
+    "requestedBy": "Pedido por: ${author}"
+  },
+  "banir" : {
+    "noAuthorPermission": ":x: | Você precisa tera a permissão `BAN MEMBERS` para executar este comando.",
+    "noMention": ":x: | Você precisa mencionar alguém!",
+    "cannotBan": ":x: | Você não pode banir <@${user}>.",
+    "cannotBanBot": ":x: | Você não pode me banir.",
+    "cannotBanAuthor": ":x: | Você não pode banir a si mesmo!",
+    "banningUser": "Você tem 30s para responder esta mensagem com o motivo da punição de **<@${user}>**.",
+    "bannedUserLine1": ":white_check_mark: | <@${user}> foi banido com sucesso da família!",
+    "bannedUserLine2": "Motivo: **${reason}**",
+    "bannedUserLine3": "Responsável: **${moderator}**",
+    "canceled": ":x: | Banimento cancelado."
+  },
+  "expulsar" : {
+    "noAuthorPermission": ":x: | Você precisa da permissão `KICK MEMBERS` para executar este comando.",
+    "noMention": ":x: | Você precisa mencionar alguém!",
+    "cannotKick": ":x: | Você não pode expulsar <@${user}>.",
+    "cannotKickBot": ":x: | Você não pode me expulsar.",
+    "cannotKickAuthor": ":x: | Você não pode expulsar a si mesmo!",
+    "kickingUser": "Você tem 30s para responder esta mensagem com o motivo da punição de **<@${user}>**.",
+    "kickedUserLine1": ":white_check_mark: | <@${user}> foi expulso com sucesso da família!",
+    "kickedUserLine2": "Motivo: **${reason}**",
+    "kickedUserLine3": "Moderador: **${moderator}**",
+    "canceled": ":x: | Expulsão cancelada.**"
+  },
+  "lockdown": {
+    "incorrectUsage": ":x: | Uso incorreto! Utilize: ${prefix}lockdown <tempo em minutos>",
+    "incorrectArgument": ":x: | Tempo inválido.",
+    "noPermission": ":x: | Você precisa ter a permissão `ADMINISTRATOR` para utilizar este comando!",
+    "lockdownDisabled": ":white_check_mark: | Lockdown desabilitado.",
+    "lockdownActivated": ":white_check_mark: | Lockdown ativado! O canal está bloqueado por alguns minutos."
+  },
+  "ping": {
+    "ping": "**:ping_pong:| Pong!** Meu delay é de: **${ping}** ms"
+  },
+  "mutar": {
+    "noPermission": ":x: | You need to have the `MANAGE_GUILD` permission to use this command.**",
+    "invalidDuration": ":x: | The provided argument is not a valid duration.",
+    "noMention": ":x: | You must mention someone to unmute them.",
+    "noRolesPermission": ":x: | I need the `MANAGE ROLES` permission to this command to work.",
+    "muted": ":white_check_mark: | ${user} was successfully muted for ${duration}",
+    "creatingRole": "Muted role created, executing mute command...",
+    "noRoleAsigned": ":x: | User cannot be unmuted because he does not longer have the MUTED role assigned.",
+    "unmuted": ":white_check_mark: | ${user} was successfully unmuted!"
+  },
+  "limpar": {
+    "invalidNumber": ":x: | Número incorreto.",
+    "noPermission": ":x: | Você precisa ter a permissão `MANAGE MESSAGES` para usar este comando.",
+    "purged": "🧨 | ${messages} mensagens foram deletadas."
+  },
+  "setprefix": {
+    "noPermission": ":x: | You need to have the `MANAGE_GUILD` permission to use this command.",
+    "incorrectUsage": ":x: | Incorrect usage!",
+    "prefixSet": ":white_check_mark: | The prefix was set to ${prefix}!",
+    "blacklistedPrefix": ":x: | Blacklisted prefix! Please choose another prefix.",
+    "cooldown": ":x: | Wait 1 minute before changing the prefix again."
+  },
+  "desmutar": {
+    "noMention": ":x: **| You must mention someone to unmute them!**",
+    "noPermission": ":x: **| You need to have the `MANAGE_GUILD` permission to use this command.**",
+    "noMutedRole": ":x: **| The Muted role does not exist. Use the tempmute command to create it.**",
+    "unmuted": ":white_check_mark: | ${user} was successfully unmuted!**",
+    "noRoleAsigned": ":x: **| User cannot be unmuted because he does not longer have the MUTED role assigned.**"
+  },
+  "falar": {
+    "noArguments": ":x: | Uso incorreto! Por favor use ${prefix}say <palavras>.**"
+  },
+  "embed": {
+    "noArguments": ":x: | Uso incorreto! Por favor use ${prefix}embed !<título> !<descrição>."
+  }
+}
