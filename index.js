@@ -38,24 +38,24 @@ fs.readdir("./commands/", (err, files) => {
 /*                                                            */
 /* ########################################################## */
 
+//left
 client.on('voiceStateUpdate', (oldState, newState) => {
-  if(newState.channelID === null) //left
+  if(newState.channelID === null)
       console.log('user left channel', oldState.channelID);
-  else if(oldState.channelID === null) // joined
+
+//join
+  else if(oldState.channelID === null)
 
       console.log('user joined channel', newState.channelID);
 
       let voiceChannel = client.channels.cache.get('915748288727248931');
-      voiceChannel
-    .join()
-    .then((connection) => {
+      voiceChannel.join()
+      .then((connection) => {
         const dispatcher = connection.play("./audios/audio.mp3");
-
-        dispatcher.on("speaking", (speaking) => {
-            if (!speaking) {
-                voiceChannel.leave();
-            }
-        });
+        dispatcher.on('finish', () => {
+          console.log('Aúdio tocado com sucesso');
+      voiceChannel.leave()
+      });
     })
 });
 
