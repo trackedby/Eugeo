@@ -38,27 +38,32 @@ fs.readdir("./commands/", (err, files) => {
 /*                                                            */
 /* ########################################################## */
 
+let voiceChannel = client.channels.cache.get('915748288727248931');
 
 client.on('voiceStateUpdate', (oldState, newState) => {
+  if(oldState.channelID === newState.channelID) {
+      console.log('[Eugeo] Membro mutou ou desmutou.')
+  }
+  if(oldState.channelID != null && newState.channelID != null && newState.channelID != oldState.channelID) {
+      console.log('[Membro] Membro trocou de canal')
+  }
+  if(oldState.channelID === null) {
+      console.log('[Eugeo] Membro conectado')
+      let voiceChannel = client.channels.cache.get('915748288727248931');
 
-// log join event
-  if(oldState.channelID === null)
-      console.log('Membro entrou no canal de voz', newState.channelID);
-
-        // get voice channel
-        let voiceChannel = client.channels.cache.get('915748288727248931');
-
-        // music event      
-        voiceChannel.join()
+      voiceChannel.join()
         .then((connection) => {
         const dispatcher = connection.play("./audios/audio.mp3");
 
-        // leave event
         dispatcher.on('finish', () => {
           console.log('Aúdio tocado com sucesso');
           voiceChannel.leave()
-      });
-    })
+        })
+        })
+  }
+  if (newState.channelID === null) {
+      console.log('[Eugeo] Membro desconectado')
+  }
 });
 
 /* ########################################################## */
